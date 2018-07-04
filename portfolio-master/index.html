@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+		   canvas{
+		   	background-color: rgb(46, 169, 223);
+		   	color: rgb(194,192,191)
+		   }
+		</style>
+	</head>
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<h2>基礎程式設計</h2>
+				<h3>portfolio</h3>
+				<h4>2018.07.02</h4>
+				<h4>彰化 黃同學</h4>
+			    </section>
+			    
+			    <section>
+			    <h3>自我介紹</h3>
+			    <canvas width=800 height=300 id="mycanvas">日本的傳統色</canvas>
+
+			    <script>
+			    	var canvas = document.getElementById("mycanvas");
+			    	var ctx = canvas.getContext("2d");
+			    	ctx.font = "166px BiauKai, '標楷體', 'Comic Sans MS'";
+			    	ctx.fillStyle = "white";
+			    	ctx.strokeStyle = "white";
+			    	ctx.textAlign = "center";
+			    	ctx.strokeText("露草", canvas.width/2,canvas.height/1.5);
+			    </script>
+			    <ul>
+			    	<li>最喜歡的動漫：獵人</li>
+			    	<li>最喜歡的球星：Stephen Curry</li>
+			    	<li>最喜歡的歌手：Bruno Mars</li>
+			    </ul>
+			    </section>
+			    
+			     
+				<section>
+					<h6>lab1 HTML forms表單</h6>
+					<p>終端機 php -S localhost:8080<br/>
+				       瀏覽器 http://localhost:8080/sample.html
+                    </p>
+                    <iframe src="./labs/lab1/sample.html" width="1200" height="600">
+                    </iframe>	
+				</section>
+				<section>Slides3</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
