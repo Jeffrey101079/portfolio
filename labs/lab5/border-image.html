@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Border Image</title>
+		<style type="text/css">
+			p.one {
+		   	    -moz-border-image: url("./dots.gif") 10 10 10 10
+		   	              stretch;
+		   	    -webkit-border-image: url("./dots/gif") 10 10 10 10
+		   	              stretch;          
+		   	    border-image: url("./dots.gif")  10 10 10 10
+		   	              stretch;
+		   	}       
+			
+			p.two {
+				-moz-border-image: url("./dots.gif") 10 10 10 10
+		   	              round;
+		   	    -webkit-border-image: url("./dots/gif") 10 10 10 10
+		   	              round;
+				border-image: url("./dots.gif") 10 10 10 10
+				          round;
+			}
+		</style>
+	</head>
+	
+		<p class="one">上大學雖然有趣，卻也令人感受到一股無形的壓力。</p>
+		<p class="two">上大學雖然有趣，卻也令人感受到一股無形的壓力。</p>
+	
+</html>
