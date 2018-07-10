@@ -3,27 +3,41 @@
 	<head>
 		<title>Border Image</title>
 		<style type="text/css">
-			p.one {
-		   	    -moz-border-image: url("./dots.gif") 10 10 10 10
+		    div{  
+		    	text-align: center;
+		    	width: 600px;
+		    	padding: 25px;
+		    	border:30px solid transparent;
+
+		    }
+			.one {
+		   	    -moz-border-image: url("./svg_border.svg") 33 33 33 33
 		   	              stretch;
-		   	    -webkit-border-image: url("./dots/gif") 10 10 10 10
+		   	    -webkit-border-image: url("./svg_border.svg") 33 33 33 33
 		   	              stretch;          
-		   	    border-image: url("./dots.gif")  10 10 10 10
+		   	    border-image: url("./svg_border.svg")  33 33 33 33
 		   	              stretch;
 		   	}       
 			
-			p.two {
-				-moz-border-image: url("./dots.gif") 10 10 10 10
+			.two {
+				-moz-border-image: url("./svg_border.svg") 33 33 33 33
 		   	              round;
-		   	    -webkit-border-image: url("./dots/gif") 10 10 10 10
+		   	    -webkit-border-image: url("./svg_border.svg") 33 33 33 33
 		   	              round;
-				border-image: url("./dots.gif") 10 10 10 10
+				border-image: url("./svg_border.svg") 33 33 33 33
 				          round;
 			}
 		</style>
 	</head>
-	
-		<p class="one">上大學雖然有趣，卻也令人感受到一股無形的壓力。</p>
-		<p class="two">上大學雖然有趣，卻也令人感受到一股無形的壓力。</p>
-	
+	<body>
+		<div class="one" >
+			<p>上大學雖然有趣，卻也令人感受到一股無形的壓力。
+			</p>
+		</div>
+
+		<div class="two" >
+			<p>上大學雖然有趣，卻也令人感受到一股無形的壓力。
+			</p>
+		</div>
+	</body>
 </html>
