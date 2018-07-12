@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Border Image</title>
+		<style type="text/css">
+		    div{  
+		    	text-align: center;
+		    	width: 600px;
+		    	padding: 25px;
+		    	border:30px solid transparent;
+
+		    }
+			.one {
+		   	    -moz-border-image: url("./svg_border.svg") 33 33 33 33
+		   	              stretch;
+		   	    -webkit-border-image: url("./svg_border.svg") 33 33 33 33
+		   	              stretch;          
+		   	    border-image: url("./svg_border.svg")  33 33 33 33
+		   	              stretch;
+		   	}       
+			
+			.two {
+				-moz-border-image: url("./svg_border.svg") 33 33 33 33
+		   	              round;
+		   	    -webkit-border-image: url("./svg_border.svg") 33 33 33 33
+		   	              round;
+				border-image: url("./svg_border.svg") 33 33 33 33
+				          round;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one" >
+			<p>上大學雖然有趣，卻也令人感受到一股無形的壓力。
+			</p>
+		</div>
+
+		<div class="two" >
+			<p>上大學雖然有趣，卻也令人感受到一股無形的壓力。
+			</p>
+		</div>
+	</body>
+</html>
